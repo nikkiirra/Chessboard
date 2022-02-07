@@ -1,0 +1,155 @@
+// @use "./background-color";
+// @use "./icons";
+// @use "./fonts";
+
+* {
+  margin: 0 0 0 0;
+  border: 0 0 0 0;
+  padding: 0 0 0 0;
+  }
+  
+  body {
+  height: 90vw;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding-left: 5vw;
+  }
+  
+  .board {
+      border: .01 ;
+      height: 80vmin;
+      width: 80vmin;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      box-shadow: rgba(255, 253, 253, 0.56) 0px 22px 70px 4px;
+  }
+  
+  .cell {
+      height: 8vmin;
+      width: 8vmin;
+      display: flex;
+      justify-content: center;
+      font-size: 7vmin;
+        
+  }
+  
+  .grey {
+      background-color: #989797;
+  }
+  
+  .yellow {
+      background-color: #AF9432;
+  }    
+  
+  #white {
+      color: white;
+  }
+  
+  #whitepawn {
+      position: relative;
+      animation: move1 1s forwards, move3 1s 2s forwards; 
+  }
+  
+  @keyframes move1 {
+      0% {bottom: 0%;}
+      100% {bottom: 200%;} 
+  }
+      
+  #whitepawn{
+      position: relative;
+      animation: move1 1s forwards; 
+  }
+  
+  @keyframes move1 {
+      0% {bottom: 0%;}
+      100% {bottom: 200%;}
+  }
+  
+  #blackknight {
+      position: relative;
+      animation: move2 1s 1s forwards, move6 1s 5s forwards;
+  }
+  
+  @keyframes move2 {
+      0% {top: 0%; left: 0%}
+      100% {top: 200%; left: 100%;}
+  }
+  
+  @keyframes move6 {
+      0% {top: 200%; left: 100%;}
+      100% {top: 400%; left: 200%;}
+  }
+  
+  #whiteknight {
+      position: relative;
+      animation: move3 1s 2s forwards, move5 1s 4s forwards;
+      
+  }
+  @keyframes move3 {
+      0% {bottom: 0%; right: 0%}
+      100% {bottom: 200%; right: 100%;}
+  }  
+  
+  @keyframes move5 {
+      0% {bottom: 200%; right: 100%;}
+    100% { bottom: 400%; right: 0%}
+  }
+  
+  #blackknight2 {
+      position: relative;
+      animation: move4 1s 3s forwards;
+  }
+  
+  @keyframes move4 {
+      0% {top: 0%; right: 0%}
+      100% {top: 200%; right: 100%;}
+  }
+  
+  #whitebishop {
+      position: relative;
+      animation: move7 1s 6s forwards, move9 1.5s 8s forwards, move11 1s 10s forwards;
+  }
+  
+  @keyframes move7 {
+      0% {bottom: 0%; right: 0%;}
+      100% {bottom: 300%; right: 300%}
+  }
+  
+  @keyframes move9 {
+      0% {bottom: 300%; right: 300%;}
+      100% {bottom: 600%; right: 0%;} 
+  }
+  
+  @keyframes move11 {
+      0% {bottom: 600%; right: 0%;}
+      100% {color: yellow;}
+  }
+  
+  #blackpawn {
+      position: relative;
+      animation: move8 1s 7s forwards;
+  }
+  
+  @keyframes move8 {
+      0% {top: 0%;}
+      100% {top: 200%;}
+  }
+  
+  #blackpawn2 {
+      position: relative;
+      animation: move10 2s 9s forwards;
+  }
+  
+  @keyframes move10 {
+      100% {opacity: 0%;}
+  }
+  
+  
+   
+
+
