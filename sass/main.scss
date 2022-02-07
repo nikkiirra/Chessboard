@@ -54,7 +54,7 @@
       
   #whitepawn{
       position: relative;
-      animation: move1 1s forwards; 
+      animation: move1 1s 0s forwards; 
   }
   
   @keyframes move1 {
