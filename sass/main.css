@@ -67,8 +67,8 @@ body {
 
 #whitepawn {
   position: relative;
-  -webkit-animation: move1 1s forwards, move3 1s 2s forwards;
-          animation: move1 1s forwards, move3 1s 2s forwards;
+  -webkit-animation: move1 1s forwards;
+          animation: move1 1s forwards;
 }
 
 @-webkit-keyframes move1 {
@@ -78,21 +78,6 @@ body {
   100% {
     bottom: 200%;
   }
-}
-
-@keyframes move1 {
-  0% {
-    bottom: 0%;
-  }
-  100% {
-    bottom: 200%;
-  }
-}
-
-#whitepawn {
-  position: relative;
-  -webkit-animation: move1 1s forwards;
-          animation: move1 1s forwards;
 }
 
 @keyframes move1 {

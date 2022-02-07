@@ -46,16 +46,6 @@
   #white {
       color: white;
   }
-  
-  #whitepawn {
-      position: relative;
-      animation: move1 1s forwards, move3 1s 2s forwards; 
-  }
-  
-  @keyframes move1 {
-      0% {bottom: 0%;}
-      100% {bottom: 200%;} 
-  }
       
   #whitepawn{
       position: relative;
