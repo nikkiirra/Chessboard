@@ -35,17 +35,22 @@
         
   }
   
+  // ---- TILE COLORS  ----- //
   .grey {
       background-color: #989797;
   }
   
   .yellow {
       background-color: #AF9432;
-  }    
+  }   
+
+  // ---- CHESS PIECES COLOR FOR WHITE TEAM ---- //
   
   #white {
       color: white;
   }
+
+  // ---- START OF KEYFRAME ANIMATION ---- //
       
   #whitepawn{
       position: relative;
